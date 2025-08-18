@@ -2,41 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Educational Design System for Remote Teachers Hub
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Educational color palette */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 27%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 27%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Educational primary - warm blue for trust and learning */
+    --primary: 207 90% 61%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 207 90% 54%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Educational secondary - soft green for growth */
+    --secondary: 142 69% 58%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 142 69% 51%;
+
+    /* Educational accent - warm orange for energy */
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 25 95% 46%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 207 90% 61%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Educational gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(207 90% 61%), hsl(207 90% 54%));
+    --gradient-secondary: linear-gradient(135deg, hsl(142 69% 58%), hsl(142 69% 51%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 95% 46%));
+    --gradient-hero: linear-gradient(135deg, hsl(207 90% 61%), hsl(142 69% 58%));
+    --gradient-subtle: linear-gradient(180deg, hsl(210 20% 98%), hsl(210 30% 96%));
+
+    /* Educational shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(207 90% 61% / 0.15);
+    --shadow-card: 0 8px 25px -8px hsl(215 25% 27% / 0.1);
+    --shadow-button: 0 4px 14px -2px hsl(207 90% 61% / 0.3);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
